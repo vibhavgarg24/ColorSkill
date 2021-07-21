@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawActivityContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C5A5A"
+    tools:context=".DrawActivity">
+
+    <!-- Preview Pic-->
+    <ImageView
+        android:id="@+id/previewPicIv"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/sample2"
+        app:layout_constraintEnd_toEndOf="@id/viewsContainer"
+        app:layout_constraintStart_toStartOf="@id/viewsContainer"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <!-- Views -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewsContainer"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline">
+
+        <!-- ROW 1 -->
+        <View
+            android:id="@+id/view1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view1"
+            app:layout_constraintStart_toEndOf="@id/view1"
+            app:layout_constraintTop_toTopOf="@id/view1" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view1"
+            app:layout_constraintStart_toEndOf="@id/view2"
+            app:layout_constraintTop_toTopOf="@id/view1" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view1"
+            app:layout_constraintStart_toEndOf="@id/view3"
+            app:layout_constraintTop_toTopOf="@id/view1" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view1"
+            app:layout_constraintStart_toEndOf="@id/view4"
+            app:layout_constraintTop_toTopOf="@id/view1" />
+
+
+        <!-- ROW 2 -->
+        <View
+            android:id="@+id/view6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view6"
+            app:layout_constraintStart_toEndOf="@id/view6"
+            app:layout_constraintTop_toTopOf="@id/view6" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view6"
+            app:layout_constraintStart_toEndOf="@id/view7"
+            app:layout_constraintTop_toTopOf="@id/view6" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view6"
+            app:layout_constraintStart_toEndOf="@id/view8"
+            app:layout_constraintTop_toTopOf="@id/view6" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view6"
+            app:layout_constraintStart_toEndOf="@id/view9"
+            app:layout_constraintTop_toTopOf="@id/view6" />
+
+        <!-- ROW 3 -->
+        <View
+            android:id="@+id/view11"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view6" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view11"
+            app:layout_constraintStart_toEndOf="@id/view11"
+            app:layout_constraintTop_toTopOf="@id/view11" />
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view11"
+            app:layout_constraintStart_toEndOf="@id/view12"
+            app:layout_constraintTop_toTopOf="@id/view11" />
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view11"
+            app:layout_constraintStart_toEndOf="@id/view13"
+            app:layout_constraintTop_toTopOf="@id/view11" />
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view11"
+            app:layout_constraintStart_toEndOf="@id/view14"
+            app:layout_constraintTop_toTopOf="@id/view11" />
+
+        <!-- ROW 4 -->
+        <View
+            android:id="@+id/view16"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view11" />
+
+        <View
+            android:id="@+id/view17"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view16"
+            app:layout_constraintStart_toEndOf="@id/view16"
+            app:layout_constraintTop_toTopOf="@id/view16" />
+
+        <View
+            android:id="@+id/view18"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view16"
+            app:layout_constraintStart_toEndOf="@id/view17"
+            app:layout_constraintTop_toTopOf="@id/view16" />
+
+        <View
+            android:id="@+id/view19"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view16"
+            app:layout_constraintStart_toEndOf="@id/view18"
+            app:layout_constraintTop_toTopOf="@id/view16" />
+
+        <View
+            android:id="@+id/view20"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view16"
+            app:layout_constraintStart_toEndOf="@id/view19"
+            app:layout_constraintTop_toTopOf="@id/view16" />
+
+        <!-- ROW 5 -->
+        <View
+            android:id="@+id/view21"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view16" />
+
+        <View
+            android:id="@+id/view22"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view21"
+            app:layout_constraintStart_toEndOf="@id/view21"
+            app:layout_constraintTop_toTopOf="@id/view21" />
+
+        <View
+            android:id="@+id/view23"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view21"
+            app:layout_constraintStart_toEndOf="@id/view22"
+            app:layout_constraintTop_toTopOf="@id/view21" />
+
+        <View
+            android:id="@+id/view24"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view21"
+            app:layout_constraintStart_toEndOf="@id/view23"
+            app:layout_constraintTop_toTopOf="@id/view21" />
+
+        <View
+            android:id="@+id/view25"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view21"
+            app:layout_constraintStart_toEndOf="@id/view24"
+            app:layout_constraintTop_toTopOf="@id/view21" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Color buttons -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewsContainer">
+
+        <ImageButton
+            android:id="@+id/redButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFFF0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/greenButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="#FF00FF00"
+            app:layout_constraintBottom_toBottomOf="@id/redButton"
+            app:layout_constraintStart_toEndOf="@id/redButton"
+            app:layout_constraintTop_toTopOf="@+id/redButton" />
+
+        <ImageButton
+            android:id="@+id/blueButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="#FF0000FF"
+            app:layout_constraintBottom_toBottomOf="@id/redButton"
+            app:layout_constraintStart_toEndOf="@id/greenButton"
+            app:layout_constraintTop_toTopOf="@+id/redButton" />
+
+        <ImageButton
+            android:id="@+id/whiteButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="#FFFFFFFF"
+            app:layout_constraintBottom_toBottomOf="@id/redButton"
+            app:layout_constraintStart_toEndOf="@id/blueButton"
+            app:layout_constraintTop_toTopOf="@+id/redButton" />
+
+        <ImageButton
+            android:id="@+id/blackButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="#FF000000"
+            app:layout_constraintBottom_toBottomOf="@id/redButton"
+            app:layout_constraintStart_toEndOf="@id/whiteButton"
+            app:layout_constraintTop_toTopOf="@+id/redButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Guideline-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <!-- Timer Bar-->
+    <ProgressBar
+        android:id="@+id/timeLeftBar"
+        style="@style/Widget.ProgressBar.Vertical"
+        android:layout_width="12dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewsContainer"
+        app:layout_constraintEnd_toStartOf="@id/viewsContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/viewsContainer" />
+
+    <!-- Pause Button-->
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_pause_24"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Brush Icon-->
+    <ImageView
+        android:id="@+id/brushIconIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/round_bg"
+        app:layout_constraintBottom_toTopOf="@id/viewsContainer"
+        app:layout_constraintEnd_toEndOf="@id/viewsContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
