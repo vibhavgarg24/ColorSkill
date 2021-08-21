@@ -34,7 +34,7 @@
             android:layout_below="@id/tvTitle"
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_orange_light"
-            android:weightSum="3">
+            android:weightSum="2">
 
             <Button
                 android:id="@+id/homeButton"
@@ -44,13 +44,13 @@
                 android:background="@android:color/transparent"
                 android:text="Home" />
 
-            <Button
-                android:id="@+id/replayButton"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:text="Replay" />
+<!--            <Button-->
+<!--                android:id="@+id/replayButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:text="Replay" />-->
 
             <Button
                 android:id="@+id/nextButton"
@@ -58,7 +58,7 @@
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:text="Next" />
+                android:text="Next Level" />
 
         </LinearLayout>
     </RelativeLayout>

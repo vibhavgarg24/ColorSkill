@@ -5,18 +5,25 @@
     android:id="@+id/drawActivityContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5C5A5A"
+    android:background="@color/my_grey"
     tools:context=".DrawActivity">
 
     <!-- Preview Pic-->
-    <ImageView
-        android:id="@+id/previewPicIv"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/sample2"
-        app:layout_constraintEnd_toEndOf="@id/viewsContainer"
-        app:layout_constraintStart_toStartOf="@id/viewsContainer"
+    <!--    <ImageView-->
+    <!--        android:id="@+id/previewPicIv"-->
+    <!--        android:layout_width="140dp"-->
+    <!--        android:layout_height="140dp"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:src="@drawable/sample2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/guideline" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/previewRv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline" />
 
     <!-- Views -->
@@ -24,10 +31,10 @@
         android:id="@+id/viewsContainer"
         android:layout_width="275dp"
         android:layout_height="275dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideline">
+        app:layout_constraintTop_toBottomOf="@id/previewRv">
 
         <!-- ROW 1 -->
         <View
@@ -271,7 +278,7 @@
             android:id="@+id/redButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#FFFF0000"
+            android:backgroundTint="@color/my_red"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -281,7 +288,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="15dp"
-            android:backgroundTint="#FF00FF00"
+            android:backgroundTint="@color/my_green"
             app:layout_constraintBottom_toBottomOf="@id/redButton"
             app:layout_constraintStart_toEndOf="@id/redButton"
             app:layout_constraintTop_toTopOf="@+id/redButton" />
@@ -291,7 +298,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="15dp"
-            android:backgroundTint="#FF0000FF"
+            android:backgroundTint="@color/my_blue"
             app:layout_constraintBottom_toBottomOf="@id/redButton"
             app:layout_constraintStart_toEndOf="@id/greenButton"
             app:layout_constraintTop_toTopOf="@+id/redButton" />
@@ -337,7 +344,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/viewsContainer" />
 
-    <!-- Pause Button-->
+    <!-- Pause Button -->
     <ImageButton
         android:id="@+id/pauseButton"
         android:layout_width="wrap_content"
@@ -349,15 +356,72 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Brush Icon-->
-    <ImageView
+    <!-- Brush Icon -->
+    <View
         android:id="@+id/brushIconIv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginEnd="5dp"
         android:background="@drawable/round_bg"
         app:layout_constraintBottom_toTopOf="@id/viewsContainer"
         app:layout_constraintEnd_toEndOf="@id/viewsContainer" />
+
+    <!-- Level and Score -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/previewRv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/levelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scoreTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,6 @@
 
     <color name="dark_blue">#3F51B5</color>
 
-
     <color name="gray_more_light">#33e5e5e5</color>
     <color name="gray_light">#F7F7F7</color>
     <color name="tab_selected_color">#d21034</color>
@@ -23,5 +22,17 @@
     <color name="gray_text">#293d51</color>
     <color name="gray_text_disabled">#54677d</color>
     <color name="gray_text_faded">#80555e63</color>
+
+    <!-- My colors -->
+    <color name="bg_color"> #1e3d59 </color>
+    <color name="my_grey">#5c5a5a</color>
+    <color name="my_red">#eb2144</color>
+    <color name="my_green">#00c753</color>
+    <color name="my_blue">#506ad4</color>
+    <color name="my_yellow">#f0D12e</color>
+    <color name="my_magenta">#d9048e</color>
+    <color name="my_cyan">#32dbf0</color>
+    <color name="my_white">#ffffff</color>
+    <color name="my_black">#000000</color>
 
 </resources>
